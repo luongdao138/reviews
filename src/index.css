@@ -1,0 +1,154 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f1f5f8;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+section {
+  width: 600px;
+  margin: auto;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  z-index: 1;
+  position: relative;
+}
+
+.item {
+  background-color: white;
+  padding: 25px 40px;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px #00000033;
+}
+
+.img-wrapper {
+  position: relative;
+  margin: auto;
+  width: 150px;
+}
+
+.circle {
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  background: #49a6e9;
+  border-radius: 50%;
+  top: -4px;
+  left: 7px;
+  z-index: 0;
+}
+
+.quote-right {
+  position: absolute;
+  background: #49a6e9;
+  padding: 12px;
+  color: #fff;
+  border-radius: 50%;
+  top: 5px;
+  left: 0px;
+  z-index: 3;
+}
+
+p.name {
+  text-transform: capitalize;
+  font-size: 16px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  margin: 16px 0 5px 0;
+}
+
+p.job {
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #4fafee;
+}
+
+.infor-wrapper {
+  text-align: center;
+}
+
+p.text {
+  color: hsl(210deg 22% 49%);
+  line-height: 24px;
+}
+
+.action {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+svg.action-arrow {
+  margin: 0 10px;
+  font-size: 22px;
+  cursor: pointer;
+  color: #9fd4fa;
+}
+
+button.suprise-btn {
+  display: block;
+  outline: none;
+  margin: auto;
+  color: #53acec;
+  border: none;
+  padding: 5px 10px;
+  background: #ebf7ff;
+  letter-spacing: 1px;
+  transition: all 0.3s linear;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button.suprise-btn:hover {
+  background-color: #49a6e9;
+  color: white;
+}
+
+.seperate {
+  width: 90px;
+  height: 4px;
+  background: #49a6e9;
+  margin: auto;
+  border-radius: 2px;
+  /* text-align: center; */
+  margin-top: -20px;
+  margin-bottom: 50px;
+}
+
+h1.title {
+  text-align: center;
+  font-size: 38px;
+  color: #102a42;
+  letter-spacing: 2px;
+}
+
+@media only screen and (max-width: 768px) {
+  section {
+    width: 93%;
+    margin-bottom: 50px;
+  }
+
+  h1.title {
+    font-size: 30px;
+  }
+
+  p.text {
+    font-size: 14px;
+  }
+
+  svg {
+    font-size: 15px;
+  }
+}
